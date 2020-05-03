@@ -42,17 +42,17 @@ if version_info[0] < 3 or version_info[1] < 6:
     quit(1)
 
 # Check if the config was edited by using the already used variable
-CONFIG_CHECK = os.environ.get("___________PLOX_______REMOVE_____THIS_____LINE__________", None)
+CONFIG_CHECK = os.environ.get("")
 
 if CONFIG_CHECK:
     LOGS.error("Please remove the line mentioned in the first hashtag from the config.env file")
     quit(1)
 
-API_KEY = os.environ.get("API_KEY", None)
+API_KEY = os.environ.get("API_KEY",1387010)
 
-API_HASH = os.environ.get("API_HASH", None)
+API_HASH = os.environ.get("API_HASH",4cb0e09c4fae8e73c1e18cca8f1b0753)
 
-STRING_SESSION = os.environ.get("STRING_SESSION", None)
+STRING_SESSION = os.environ.get("STRING_SESSION",1AZWarzMBu0yfw3qOLB3DOiqydBjHkP6dGutBlXG3hSdToNhgHZK81Eok5TXF1XDDXN49hOZEmMJqiRQC_VOY1gePRWu_kBfSP0FSqlwYY9EU7JppG-MgNp3IQREGqgQbFw52jH0oRogjPbmeSsnPlFvU-6jRkmiB3VfiynwEJ5zoyr0Hfgej9r6eL4ErSp2sE974SoPQIP6viiJgcDhjBE9bKXeEiCHJJ8nxDHSuK8vzF2-WMeRTWtoaIaAD1A3v6l69CulFNqyUBp_snZVRqgFAY83BSnlOerugczoenmWbi-PgFapK26aHxp_GZClX892kOJ6xSC08CO1Iz6V9p5Ka_bzrCsw=)
 
 LOGGER_GROUP = int(os.environ.get("LOGGER_GROUP", "0"))
 
